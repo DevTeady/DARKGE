@@ -1,0 +1,40 @@
+{
+    "name": "DARKGE-X",
+    "description": "telegram pluggable userbot",
+    "logo": "https://telegra.ph/file/e353705c3bbfb435c837d.jpg",
+    "keywords": [
+        "DARKGE-X",
+        "telegram",
+        "pluggable",
+        "userbot"
+    ],
+    "repository": "https://github.com/DevTeady/DARKGE-X",
+    "website": "https://github.com/DevTeady/DARKGE-X",
+    "success_url": "https://github.com/DevTeady/DARKGE-X",
+    "env": {
+        "API_ID": {"description": "Get this value from https://my.telegram.org"},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org"},
+        "DATABASE_URL": {"description": "Mongodb url from https://cloud.mongodb.com/"},
+        "LOG_CHANNEL_ID": {"description": "Telegram Log Channel ID"},
+        "HU_STRING_SESSION": {
+            "description": "Get it by 'https://GenUserGeString.usergeuserbot.repl.run' or use `bash genStr`",
+            "required": false}
+    },
+    "addons": [],
+    "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab.git"},
+        {"url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"},
+        {"url": "https://github.com/rking32/heroku-buildpack-google-chrome"},
+        {"url": "https://github.com/rking32/heroku-buildpack-chromedriver"},
+        {"url": "https://github.com/chrismytton/heroku-buildpack-jq.git"},
+        {"url": "https://github.com/heroku/heroku-buildpack-apt.git"},
+        {"url": "heroku/python"}
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}

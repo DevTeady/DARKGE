@@ -1,0 +1,6 @@
+version: "1"
+rules:
+  - base: alpha
+    upstream: UsergeTeam:alpha
+    mergeMethod: rebase
+    mergeUnstable: false
