@@ -445,9 +445,9 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
 
                 alive_info = f"""
      **DARKGE-X** is Up and Running ⚡**
- • 🐍 Pyt hon :  `v{versions.__python_version__}`
+ • 🐍 Python :  `v{versions.__python_version__}`
  • 🔥 Pyrogram :  `v{versions.__pyro_version__}`
- • 🔅 DARK UI :  `v{get_version()}`
+ • 🔅 DARK UI :  `0.2.8`
                 """
 
                 results.append(
